@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "jquery": "^3.6.4",
     "preact": "^10.11.3"
   },
   "devDependencies": {
