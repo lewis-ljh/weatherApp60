@@ -11,7 +11,7 @@ export function App() {
 
 
       <div class="city_selection">
-        <img src="" width="35em" class="logo" alt="City Selection" />
+        <img src="" width="35em" class="logo" alt="city selection" />
         
         <select id="city-select">
                 <option value="London">London</option>
