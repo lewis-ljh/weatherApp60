@@ -1,5 +1,4 @@
 import { useState } from 'preact/hooks'
-import preactLogo from './assets/preact.svg'
 import './app.css'
 import FetchWeather from './fetch/fetchWeather'
 
@@ -8,6 +7,30 @@ export function App() {
 
   return (
     <>
+
+
+
+      <div class="city_selection">
+        <img src="" width="35em" class="logo" alt="Vite logo" />
+        
+        <select id="city-select">
+                <option value="London">London</option>
+                <option value="New York">New York</option>
+                <option value="Paris">Paris</option>
+                <option value="Tokyo">Tokyo</option>
+        </select>
+      </div>
+
+
+      <div class="weather_img">
+        <img src="src/sunimage.png" width="100em" class="logo" alt="Vite logo" />
+      </div>
+
+
+      <div class="card">    
+        <FetchWeather />
+      </div>
+      
       <div class="day-forecast">
         <a href="#Monday">Monday</a>
         <a href="#Tuesday">Tuesday</a>
@@ -17,10 +40,7 @@ export function App() {
         <a href="#Saturday">Saturday</a>
         <a href="#Sunday">Sunday</a>
       </div>
-      <h1>Weather App</h1>
-      <div class="card">    
-        <FetchWeather />
-      </div>
+
 
     </>
   )

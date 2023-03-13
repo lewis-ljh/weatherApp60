@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import { useState } from 'preact/hooks'
 
+
 const FetchWeather = () => {
     const [temp, setTemp] = useState(null)
     let city = "Mogadishu" 
@@ -21,8 +22,10 @@ const FetchWeather = () => {
 
     return (
         <div>
-            <p>
-                Temp: {temp}
+            {city}
+            <p style={{color:"orange",fontSize: "45px", padding:"0", margin:"0"}}>
+                {temp}
+                <span>&#176;</span>
             </p>
         </div>
     )
